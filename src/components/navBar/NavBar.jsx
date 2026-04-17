@@ -2,6 +2,7 @@
 
 import { ClipboardClock } from "lucide-react";
 import { SquareUser } from "lucide-react";
+import { Wallet } from "lucide-react";
 import { ChartArea } from "lucide-react";
 import { House } from "lucide-react";
 import Link from "next/link";
@@ -12,20 +13,20 @@ const NavBar = () => {
   return (
     <section className="sBg pColor flex justify-around items-center py-4">
       <Link
-        href="/"
-        className={`link ${pathname === "/" ? "active" : "p-[1%]"}`}
+        href="/homepage"
+        className={`link ${pathname === "/homepage" ? "active" : "p-[1%]"}`}
       >
         <House />
       </Link>
       <Link
-        href="/user_history"
-        className={`link ${pathname === "/user_history" ? "active" : "p-[1%]"}`}
+        href="/homepage/add_money"
+        className={`link ${pathname === "/homepage/add_money" ? "active" : "p-[1%]"}`}
       >
-        <ClipboardClock />
+        <Wallet />
       </Link>
       <Link
-        href="/status"
-        className={`link ${pathname === "/status" ? "active" : "p-[1%]"}`}
+        href="/homepage/status"
+        className={`link ${pathname === "/homepage/status" ? "active" : "p-[1%]"}`}
       >
         <ChartArea />
       </Link>
