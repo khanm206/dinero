@@ -1,2 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.pBg {
+  background-color: #f7f5f0;
+}
+.sBg {
+  background-color: #0f3d2e;
+}
+
+.pColor {
+  color: #f7f5f0;
+}
+.sColor {
+  color: #0f3d2e;
+}
+.tColor {
+  color: #22c55e;
+}
+.active {
+  background-color: #f7f5f0;
+  color: #0f3d2e;
+  padding: 1%;
+  border-radius: 30%;
+}
